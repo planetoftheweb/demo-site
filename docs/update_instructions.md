@@ -3,6 +3,10 @@
 
 To customize the AI Art Gallery with your own images, follow these steps:
 
+### Prerequisites
+1. A text editor (e.g., Sublime Text, Atom, Visual Studio Code).
+2. Basic understanding of HTML, CSS and JavaScript.
+
 ## Step 1: Prepare Your Images
 1. **Organize Your Images**: Create folders for different categories (e.g., characters, cityscapes, indoors, textures, styles).
 2. **Naming Convention**: Name your images clearly to indicate their content (e.g., `steampunkwhale.jpg`, `aliencity.jpg`).
@@ -11,6 +15,7 @@ To customize the AI Art Gallery with your own images, follow these steps:
 ## Step 2: Update the HTML File
 1. **Open the `index.html` file**: Use a text editor or an HTML editor.
 2. **Locate the Sections**: Each section of the gallery (characters, cityscapes, indoors, textures, styles) is marked with an `<hgroup>` tag and a section id (e.g., `id="characters"`).
+3. **About Section**: Edit the text within the <hgroup> tags under the #about section ID.
 
 ### Example HTML Structure for a Section
 ```html
@@ -31,6 +36,9 @@ To customize the AI Art Gallery with your own images, follow these steps:
 3. **Add Your Images**: Within the `<div class="grid">` tag of each section, add your image tags. Follow the existing structure for consistency.
    - Use the relative path to your image folder.
    - Include the `alt` attribute for accessibility and SEO.
+   - Ensure your images are optimized for web use. Large image files can slow down page loading times.
+   - Consider using image compression tools to reduce file sizes without compromising quality.
+   - Ensure all images are in .jpg extension. 
 
 ### Example of Adding an Image
 ```html
@@ -50,5 +58,14 @@ To customize the AI Art Gallery with your own images, follow these steps:
 1. **Validate HTML**: Use an HTML validator to check for any errors.
 2. **Backup**: Keep a backup of the original `index.html` and your modified version.
 3. **Deploy**: Upload your updated `index.html` and images to your web server or hosting service.
+
+## Troubleshooting Common Issues and Solutions
+### Image Display Problems:
+1. **Image not loading**: Check the image file path in the src attribute of the <img> tag. Ensure it's correct and the image exists in the specified location.
+2. **Image size or format issues**: Ensure images are in JPG format. Check if the image dimensions are compatible with the layout.
+
+### Layout Problems:
+1. **Images not aligned properly**: Inspect the CSS styles applied to the image containers and the grid layout. 
+
 
 By following these steps, you can customize the AI Art Gallery to feature your own unique images, enhancing the visual appeal and personalization of your gallery.
